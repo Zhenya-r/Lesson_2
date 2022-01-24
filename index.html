@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 2</title>
+</head>
+
+<body>
+	<header class="header">
+		<h1>Начало знакомства с HTLM тегами</h1>
+		<nav>
+			<ul>
+				<li><a href="#about-header"><code>&lt;header&gt;</code></a></li>
+				<li><a href="#about-main"><code>&lt;main&gt;</code></a></li>
+				<li><a href="#about-footer"><code>&lt;footer&gt;</code></a></li>
+				<li><a href="#about-div"><code>&lt;div&gt;</code></a></li>
+				<li><a href="#about-nav"><code>&lt;nav&gt;</code></a></li>
+				<li><a href="#about-h"><code>&lt;h1-h6&gt;</code></a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="main">
+		<div id="about-header">
+			<h2>Header</h2>
+			<p>HTML-элемент <code>&lt;header&gt;</code> представляет собой вводный контент, обычно группу вводных или навигационных средств. Он может содержать другие элементы-заголовки, а также логотип, форму поиска, имя автора и другие элементы.</p>
+			<h3>Пример</h3>
+			<pre>
+&lt;header&gt;
+	&lt;h1&gt;Заголовок главной страницы&lt;/h1&gt;
+	&lt;img src="mdn-logo-sm.png" alt="MDN logo"&gt;
+&lt;/header&gt;
+			</pre>
+		</div>
+		<div id="about-main">
+			<h2>Main</h2>
+			<p>HTML-элемент <code>&lt;main&gt;</code> предназначен для основного контента (содержимого)<code>&lt;body&gt;</code> документа (страницы). <br> Основной контент состоит из контента, который непосредственно относится к главной теме документа или её развивает.</p>
+			<h3>Пример</h3>
+			<pre>
+&lt;main&gt;
+	&lt;p&gt;Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Australia.&lt;/p&gt;
+	&lt;p&gt;Many species of gecko have adhesive toe pads which enable them to climb walls and even windows.&lt;/p&gt;
+&lt;/main&gt;
+			</pre>
+		</div>
+		<div id="about-footer">
+			<h2>Footer</h2>
+			<p>HTML-элемент <code>&lt;footer&gt;</code> представляет собой нижний колонтитул (футер, подвал) для своего ближайшего секционного контента или секционного корня. Футер обычно содержит информацию об авторе раздела, информацию об авторском праве или ссылки на связанные документы.</p>
+			<h3>Пример</h3>
+			<pre>
+&lt;footer&gt;
+	&lt;p&gt;© 2018 Gandalf&lt;/p&gt;
+&lt;/footer&gt;
+			</pre>
+		</div>
+		<div id="about-div">
+			<h2>Div</h2>
+			<p>Элемент разделения контента HTML (<code>&lt;div&gt;</code>) является универсальным контейнером для <a href="https://developer.mozilla.org/ru/docs/Web/Guide/HTML/Content_categories#%D0%BF%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%B2%D1%8B%D0%B9_%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D1%82" target="_blank">потокового контента</a>. Он не влияет на контент или макет до тех пор, пока не будет стилизован с помощью <a href="https://developer.mozilla.org/ru/docs/Glossary/CSS" target="_blank">CSS</a>.</p>
+			<p>Являясь "чистым" контейнером, элемент <code>&lt;div&gt;</code>, по существу, не представляет ничего. Между тем, он используется для группировки контента, что позволяет легко его стилизовать, используя атрибуты <code>class</code> или <code>id</code>, помечать раздел документа, написанный на разных языках (используя атрибут <code>lang</code>), и так далее.</p>
+			<h3>Пример</h3>
+			<pre>
+&lt;div class="warning"&gt;
+	&lt;img src="/media/examples/leopard.jpg"	alt="An intimidating leopard."&gt;
+	&lt;p&gt; Beware of the leopard &lt;p&gt;
+&lt;/div&gt;
+			</pre>
+			<h3>Поддержка браузерами</h3>
+			<img src="img/div.jpg" alt="Поддержка браузерами">
+		</div>
+		<div id="about-nav">
+			<h2>Элемент секции навигации nav</h2>
+			<p>HTML-элемент &lt;nav&gt; определяет отдельную секцию документа, назначение которой обозначение ссылок навигации (как внутри текущего документа, так и ведущих на другую страницу). В качестве примера такой секции можно привести меню, якорные ссылки.</p>
+			<h3>Пример</h3>
+			<p>В данном примере, блок &lt;nav&gt; содержит ненумерованный список (&lt;ul&gt;) ссылок. С помощью CSS данный блок можно использовать как сайдбар, навигационную колонку или выпадающее меню.</p>
+			<pre>
+&lt;nav class="menu"&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href="#">Главная&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#">О нас&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#">Контакты&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;
+			</pre>
+			<h3>Совместимость с браузерами</h3>
+			<img src="img/nav.jpg" alt="Совместимость с браузерами">
+		</div>
+		<div id="about-h">
+			<h2>h1–h6: HTML-элементы заголовков секций</h2>
+			<p>HTML-элементы &lt;h1-h6&gt; представляют собой 6 уровней заголовков секций. &lt;h1&gt; это наибольший заголовок и &lt;h6&gt; - наименьший</p>
+			<h3><mark>Примечания к использованию</mark></h3>
+			<ul>
+				<li>Информация о заголовке может использоваться пользовательскими агентами, например, для автоматического создания оглавления для документа</li>
+				<li>Не используйте низкие уровни чтобы снизить размер шрифта: используйте CSS <code>font-size</code> вместо.</li>
+				<li>Избегайте пропуск уровней заголовков: всегда начинайте с &lt;h1&gt;, потом используйте &lt;h2&gt;, и так далее</li>
+				<li>Вам следует рассмотреть избегание использования &lt;h1&gt; более раза на страницу.</li>
+			</ul>
+			<h3>Примеры</h3>
+			<pre>
+&lt;h1&gt; Heading level 1 &lt;/h1&gt;
+&lt;h2&gt; Heading level 2 &lt;/h2&gt;
+&lt;h3&gt; Heading level 3 &lt;/h3&gt;
+&lt;h4&gt; Heading level 4 &lt;/h4&gt;
+&lt;h5&gt; Heading level 5 &lt;/h5&gt;
+&lt;h6&gt; Heading level 6 &lt;/h6&gt;
+			</pre>
+			<h3>Доступность</h3>
+			<p>Заголовки могут быть вложены в подразделы, чтобы отразить организацию содержимого страницы. Большинство программ чтения с экрана также могут создавать упорядоченный список всех заголовков на странице, что может помочь человеку быстро определить иерархию содержимого:</p>
+			<ol>
+				<li><code>h1</code> Жуки
+					<ol>
+						<li><code>h2</code> Этимология</li>
+						<li><code>h2</code> Распределение и разнообразие</li>
+						<li><code>h2</code> Эволюция
+							<ol>
+								<li><code>h3</code> Поздний полиозой</li>
+								<li><code>h3</code> Юрский период</li>
+								<li><code>h3</code> Меловойский период</li>
+								<li><code>h3</code> Кайнозойский период</li>
+							</ol>
+						</li>
+						<li><code>h2</code> Внешняя морфология
+							<ol>
+								<li><code>h3</code> Голова
+									<ol>
+										<li><code>h4</code> Рот</li>
+									</ol>
+								</li>
+								<li><code>h3</code> Туловище
+									<ol>
+										<li><code>h4</code> Передгрудь</li>
+										<li><code>h4</code> Пиероторакс</li>
+									</ol>
+								</li>
+								<li><code>h3</code> Ноги</li>
+								<li><code>h3</code> Крыла</li>
+								<li><code>h3</code> Живот</li>
+							</ol>
+						</li>
+					</ol>
+				</li>
+			</ol>
+			<p>Когда заголовки вложены, уровни заголовков могут быть «пропущены» при закрытии подраздела</p>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<a href="#top">Вернуться наверх</a>
+	</footer>
+
+</body>
+
+</html>
