@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Task 6</title>
+</head>
+
+<body>
+   <a href="../index.html">Повернутись до задач</a>
+   <p>З клавіатури вводяться вартість товару та кількість одиниць 3 товарів.
+      Обчислити вартість кожного товару окремо та загальну вартість.
+      Вивести чек (як у супермаркеті) використовуючи елементи розмітки.</p>
+   <script>
+      //1. Вводимо необхідні значення
+      let priceFirstGoods = parseFloat(prompt('Введіть ціну першого товару'))
+      let amountFistGoods = parseInt(prompt('Введіть кількість першого товару'))
+      let priceSecondGoods = parseFloat(prompt('Введіть ціну другого товару'))
+      let amountSecondGoods = parseInt(prompt('Введіть кількість другого товару'))
+      let priceThirdGoods = parseFloat(prompt('Введіть ціну третього товару'))
+      let amountThirdGoods = parseInt(prompt('Введіть кількість третього товару'))
+
+      //2. Выводимо результат
+      document.write(`
+      <table border="2px">
+          <tr>
+              <th>Назва товару</th>
+              <th>Ціна за одиницю товара</th>
+              <th>Кількість товару</th>
+              <th>Загальна ціна за товар</th>
+          </tr>
+          <tr>
+              <th>Перший товар</th>
+              <td>${(priceFirstGoods).toFixed(2)}</td>
+              <td>${amountFistGoods}</td>
+              <td>${(priceFirstGoods * amountFistGoods).toFixed(2)}</td>
+          </tr>
+         <tr>
+              <th>Другий товар</th>
+              <td>${(priceSecondGoods).toFixed(2)}</td>
+              <td>${amountSecondGoods}</td>
+              <td>${(priceSecondGoods * amountSecondGoods).toFixed(2)}</td>
+          </tr>
+         <tr>
+              <th>Третій товар</th>
+              <td>${(priceThirdGoods).toFixed(2)}</td>
+              <td>${amountThirdGoods}</td>
+              <td>${(priceThirdGoods * amountThirdGoods).toFixed(2)}</td>
+          </tr>
+          <tr>
+              <th colspan="3">Загальна вартість</th>
+              <td>${((priceFirstGoods * amountFistGoods) + (priceSecondGoods * amountSecondGoods) + (priceThirdGoods * amountThirdGoods)).toFixed(2)}</td>
+          </tr>
+        </table>
+      `)
+   </script>
+</body>
+
+</html>

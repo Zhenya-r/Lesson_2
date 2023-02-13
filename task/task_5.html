@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Task 5</title>
+</head>
+
+<body>
+   <a href="../index.html">Повернутись до задач</a>
+   <p>Дано кількість секунд, що пройшла від початку доби. Визначити скільки це годин і хвилин.</p>
+   <script>
+      //1. Вводимо необхідні значення
+      let seconds = parseInt(prompt('Введіть кількість секунд'));
+
+      //2. Выводимо результат
+      document.write(
+         `
+       З початку дня пройшло : <br>
+       ${parseInt(seconds / 3600)} годин <br>
+       ${parseInt(seconds % 3600 / 60)} хвилин; <br>
+       ${seconds % 3600 % 60} секунд
+      ;
+      `)
+   </script>
+</body>
+
+</html>
